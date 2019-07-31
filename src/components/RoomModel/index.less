@@ -1,0 +1,246 @@
+@import '~antd/lib/style/themes/default.less';
+
+
+.icons{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../../assets/img/spirts.png) no-repeat;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.leftTitle{
+  width: 120px;
+}
+.rigthtInfo{
+  width: calc(100% - 120px);
+}
+.base{
+  >div{
+    display: flex;
+  }
+}
+.popover{
+  width: 422px;
+  text-indent: 10px;
+  margin: -16px;
+
+  .roweffcts{
+      height: 42px;
+      border-bottom: 1px solid rgb(204, 204, 204);
+      display: flex;
+      justify-content: center;
+      div{
+        line-height: 42px;
+      }
+  }
+
+  .roweffct{
+      border-bottom: 1px dashed #ccc;
+      display: flex;
+      justify-content: center;
+
+  }
+  h5{
+    font-size: 16px;
+    padding: 3px 0;
+  }
+  .lright{
+    background: #eaedf5;
+
+    vertical-align: top;
+    font-size: 14px;
+    ul{
+      padding: 0;
+      li {
+        margin: 2px 0;
+      }
+    }
+    .icon0{
+      &:extend(.icons);
+      background-position-y: 0;
+    }
+    .icon15{
+      &:extend(.icons);
+      background-position-y: -300px;
+    }
+    .icon110{
+      &:extend(.icons);
+      background-position-y: -200px;
+      
+    }
+    .icon11{
+      &:extend(.icons);
+      background-position-y: -220px;
+    }
+    .icon12{
+      &:extend(.icons);
+      background-position-y: -240px;
+    }
+    .icon9{
+      &:extend(.icons);
+      background-position-y: -100px;
+    }
+    .icon18{
+      &:extend(.icons);
+      background-position-y: -360px;
+    }
+    .icon14{
+      &:extend(.icons);
+      background-position-y: -280px;
+    }
+    .icon13{
+      &:extend(.icons);
+      background-position-y: -260px;
+    }
+    .icon7{
+      &:extend(.icons);
+      background-position-x: -30px;
+      background-position-y: -140px;
+    }
+    .icon10{
+      &:extend(.icons);
+      background-position-x: -30px;
+      background-position-y: -200px;
+    }
+    .icon1{
+      &:extend(.icons);
+      background-position-x: -30px;
+      background-position-y: -20px;
+    }
+    .icon11{
+      &:extend(.icons);
+      background-position-x: -30px;
+      background-position-y: -220px;
+    }
+    .icon4{
+      &:extend(.icons);
+      background-position-y: -80px;
+    }
+    .icon7{
+      &:extend(.icons);
+      background-position-x: -30px;
+      background-position-y: -140px;
+    }
+  }
+}
+
+.container{
+  display: inline-block;
+  margin: 1px;
+  box-sizing: border-box;
+
+  .MainBox{
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    height: 140px;
+    margin: 8px;
+    border: 1px solid #e5e7f0;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+
+
+      >div:nth-child(1){
+        position: relative;
+        height: 112px;
+        padding: 5px;
+
+
+        div{
+          bottom: 5px;
+          margin: 10px 0 0 5px;
+          width: 30px;
+          margin-right: 10px;
+          border-radius: 4px;
+          text-align: center;
+          overflow: hidden;
+          vertical-align: top;
+          i{
+            display: block;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 30px;
+            text-align: center;
+            font-style: normal;
+          }
+          p{
+            background-color: #fff;
+            line-height: 16px;
+            padding: 0;
+            color: #0cc664;
+          }
+
+
+      }
+    }
+  }
+  p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 5px;
+    margin: 0;
+  }
+
+  .status1{
+    background-color: #73a6fb;
+    color: #fff;
+    >p:not(:first-child){
+        font-size: 16px;
+    }
+    p:first-child{
+      margin: 3px 0;
+      padding-right: 18px;
+      line-height: 16px;
+      height: 16px;
+    }
+  }
+  .status0{
+    background-color: #aae9d3;
+    color: #6e7387;
+    >p:not(:first-child){
+        font-size: 16px;
+    }
+    p:first-child{
+      margin: 3px 0;
+      padding-right: 18px;
+      line-height: 16px;
+      height: 16px;
+    }
+  }
+  .preOrder{
+    i{
+      background: #f6bb42;
+    }
+  }
+  .renting{
+    display: none;
+  }
+  .empty{
+    i{
+      background: #0cc664;
+    }
+  }
+  .bottom{
+    line-height: 24px;
+    color: #9a9ca6;
+    display: flex;
+    justify-content: space-between;
+    >p:first-child{
+        max-width: 54px;
+    }
+    >p:last-child{
+      max-width: 44px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+}

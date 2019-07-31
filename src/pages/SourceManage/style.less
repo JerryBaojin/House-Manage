@@ -1,0 +1,197 @@
+@import '~antd/lib/style/themes/default.less';
+
+.center{
+  .ant-advanced-search-form{
+   .ant-row{
+      margin-left: 10px;
+    }
+  }
+  .lists{
+    position: relative;
+    border: 1px solid #ddd;
+    >div:nth-child(1){
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 40px;
+      background-color: #eee;
+      .content{
+        position: absolute;
+        width: 100%;
+        font-size: 12px;
+        top: 50%;
+        margin-top: -24px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -1px;
+      }
+    }
+    >div:nth-child(2){
+          padding-left: 40px;
+    }
+  }
+
+
+}
+.rows{
+  margin-left:25px !important;
+  margin-top:20px;
+}
+.rows .ant-form-item{   
+ margin-bottom: 0 !important;
+}
+:global{
+  .ant-advanced-search-form {
+    padding: 24px;
+    background: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+
+  }
+
+  .ant-advanced-search-form .ant-form-item {
+    display: flex;
+    margin: 0;
+  }
+
+  
+
+  .ant-advanced-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+}
+.cards{
+  display: flex;
+
+  .cardList{
+    flex:1;
+    margin: 20px;
+  }
+}
+.adjustScreen{
+  margin: 2px;
+}
+.center{
+  display: block;
+  margin: auto;
+}
+.hideLabel {
+  label {
+    display: none !important;
+  }
+}
+.addProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  label {
+    margin:0 8px 0 2px;
+  }
+  input {
+    width: 200px;
+  }
+  button {
+    margin-left: 4px;
+  }
+}
+.card {
+  margin-bottom: 24px;
+}
+
+.heading {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.steps:global(.ant-steps) {
+  max-width: 750px;
+  margin: 16px auto;
+}
+
+.errorIcon {
+  margin-right: 24px;
+  color: @error-color;
+  cursor: pointer;
+  i {
+    margin-right: 4px;
+  }
+}
+
+.errorPopover {
+  :global {
+    .ant-popover-inner-content {
+      min-width: 256px;
+      max-height: 290px;
+      padding: 0;
+      overflow: auto;
+    }
+  }
+}
+
+.errorListItem {
+  padding: 8px 16px;
+  list-style: none;
+  border-bottom: 1px solid @border-color-split;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: @primary-1;
+  }
+  &:last-child {
+    border: 0;
+  }
+  .errorIcon {
+    float: left;
+    margin-top: 4px;
+    margin-right: 12px;
+    padding-bottom: 22px;
+    color: @error-color;
+  }
+  .errorField {
+    margin-top: 2px;
+    color: @text-color-secondary;
+    font-size: 12px;
+  }
+}
+
+.editable {
+  td {
+    padding-top: 13px !important;
+    padding-bottom: 12.5px !important;
+  }
+}
+
+// custom footer for fixed footer toolbar
+.advancedForm + div {
+  padding-bottom: 64px;
+}
+
+.advancedForm {
+  :global {
+    .ant-form .ant-row:last-child .ant-form-item {
+      margin-bottom: 24px;
+    }
+    .ant-table td {
+      transition: none !important;
+    }
+  }
+}
+
+.optional {
+  color: @text-color-secondary;
+  font-style: normal;
+}
+.config{
+  h2{
+    text-indent: 20px;
+    font-weight: bold;
+  }
+  h3{
+    text-indent: 40px;
+  }
+}
+.projectList{
+  margin-left:23px;
+}
